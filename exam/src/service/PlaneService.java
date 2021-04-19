@@ -37,11 +37,6 @@ public class PlaneService {
         return plane;
     }
 
-//    PlaneService
-//    Task 1. (score 5)
-//    Create function:
-//    Parameter one Plane
-//    Result: print cost and topSpeed if the plane is military otherwise print model and country
 
     public void printCostAndTopSpeed(Plane plane) {
         if (plane.isMilitary()) {
@@ -53,19 +48,11 @@ public class PlaneService {
         }
     }
 
-//    Task 2. (score 5)
-//    Create function:
-//    Parameter two Planes
-//    Result: return the plane which one is newer (if they have the same age return first one).
 
     public Plane newerPlane(Plane plane1, Plane plane2) {
         return plane1.getYear() >= plane2.getYear() ? plane1 : plane2;
     }
 
-//    Task 3. (score 8)
-//    Create function:
-//    Parameter three Planes
-//    Result: print country of the plane with smallest seats count (if they have the same - print first).
 
     public void countryOfPlaneWithLessSeats(Plane plane1, Plane plane2, Plane plane3) {
         Plane smallest = plane1.getSeats() <= plane2.getSeats() ? plane1 : plane2;
@@ -75,10 +62,7 @@ public class PlaneService {
         System.out.println(smallest.getCountry());
     }
 
-//    Task 4. (score 8)
-//    Create function:
-//    Parameter array of Planes
-//    Result: print all not military planes.
+
 
     public void allNotMilitary(Plane[] planes) {
         for (int i = 0; i < planes.length; i++) {
@@ -88,10 +72,6 @@ public class PlaneService {
         }
     }
 
-//            Task 5. (score 9)
-//    Create function:
-//    Parameter array of Planes
-//    Result: print all military planes which were in air more than 100 hours.
 
 
     public void allMilitaryMoreThan100(Plane[] planes) {
@@ -102,10 +82,6 @@ public class PlaneService {
         }
     }
 
-    //            Task 6. (score 10)
-//    Create function:
-//    Parameter array of Planes
-//    Result: return the plane with minimal weight (if there are some of them return last one).
 
     public Plane minimalWeight(Plane[] planes) {
         Plane minimal = planes[0];
@@ -118,10 +94,6 @@ public class PlaneService {
 
     }
 
-//    Task 7. (score 10)
-//    Create function:
-//    Parameter array of Planes
-//    Result: return the plane with minimal cost from all military planes (if there are some of them return first one).
 
     public Plane minimalCostOfMilitaryPlanes(Plane[] planes) {
         Plane mimimal = null;
@@ -136,10 +108,7 @@ public class PlaneService {
         return mimimal;
     }
 
-    //    Task 8. (score 15)
-//    Create function:
-//    Parameter array of Planes
-//    Result: print planes in ascending form order by year
+
     public void orderByYear(Plane[] planes) {
         int count = 0;
         boolean flag = true;
